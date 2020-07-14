@@ -48,7 +48,7 @@ const SignUp: React.FC = () => {
 
         await api.post('/users', data);
 
-        history.push('/', { state: history });
+        history.push('/');
 
         addToast({
           type: 'success',
@@ -66,8 +66,8 @@ const SignUp: React.FC = () => {
 
         addToast({
           type: 'error',
-          title: 'Erro na cadastro',
-          description: 'Ocorreu um erro ao fazer cadastro, tente novamente.',
+          title: 'Erro no cadastro',
+          description: 'Ocorreu um erro ao realizar cadastro, tente novamente.',
         });
       }
     },

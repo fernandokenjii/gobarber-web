@@ -54,6 +54,7 @@ const ResetPassword: React.FC = () => {
         }
 
         await api.post('/password/reset', {
+          token,
           password,
           password_confirmation,
         });
@@ -70,7 +71,7 @@ const ResetPassword: React.FC = () => {
 
         addToast({
           type: 'error',
-          title: 'Erro na ressetar senha',
+          title: 'Erro ao resetar senha',
           description: 'Ocorreu um erro ao resetar senha, tente novamente.',
         });
       }
