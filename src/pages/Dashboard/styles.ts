@@ -14,6 +14,10 @@ export const HeaderContent = styled.div`
   display: flex;
   align-items: center;
 
+  img {
+    height: 80px;
+  }
+
   button {
     margin-left: auto;
     border: 0;
@@ -48,8 +52,13 @@ export const Profile = styled.div`
       color: #f4ede8;
     }
 
-    strong {
+    a {
+      text-decoration: none;
       color: #ff9000;
+
+      &:hover {
+        opacity: 0.8;
+      }
     }
   }
 `;
